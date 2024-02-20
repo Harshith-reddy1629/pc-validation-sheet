@@ -1,0 +1,1170 @@
+[{
+  "_id": {
+    "$oid": "64747eb196c82cfaf0e21a4d"
+  },
+  "name": "nkumar",
+  "email": "nkumar@purecodesoftware.com",
+  "password": "2728d3e456988d114c034363fc36db27c9bc4a5cc3dad625a2b2485fb97e8f6d604b424fff4f3efc7819cdd4d8b0c7151793946eca45b0a6b091ef8b4f31a62f",
+  "company": "purecode",
+  "sys_role": "ADMIN",
+  "createdAt": {
+    "$date": "2023-05-29T10:30:09.309Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-01T12:20:24.186Z"
+  },
+  "__v": 0,
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "64747c3af799f82401b9c81b"
+  },
+  "name": "test user",
+  "email": "admin@user.com",
+  "password": "f9a26de7766ebcf43f0437deba755c579c711d97b5b4d9072ac80251e364d003380c9e6dfafa0fc62ac0d90abf358daf426bce8931cbeb06bf7ccd25496471f1",
+  "company": "purecode",
+  "sys_role": "ADMIN",
+  "createdAt": {
+    "$date": "2023-05-29T10:19:38.786Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-01T12:20:24.186Z"
+  },
+  "__v": 0,
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "65c22b66c58900632348b6d9"
+  },
+  "name": "Admin",
+  "email": "admin@purecode.com",
+  "password": "4ea1ce4636435fc240f9b609c8217fd309c99386e882e805b932d1021733f6e9b1366a81ba373742b9f3475997f7d80550a17019288ff84b81eaed1c209416a4",
+  "company": "purecode ai",
+  "sys_role": "ADMIN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-06T12:51:50.268Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-06T12:51:50.268Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c239efd4d84062f0003b7b"
+  },
+  "name": "Test User",
+  "email": "test@user.com",
+  "password": "f9a26de7766ebcf43f0437deba755c579c711d97b5b4d9072ac80251e364d003380c9e6dfafa0fc62ac0d90abf358daf426bce8931cbeb06bf7ccd25496471f1",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-06T13:53:51.210Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-06T13:53:51.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c467171d95e01147c7d304"
+  },
+  "name": "Prashant Sachan",
+  "email": "psachan@purecodesoftware.com",
+  "password": "038021e03fc7d8637c043fedeabdc1ea85c7bb5fbd8aa11735bb52cf49027208b4ffd7a1fc6b9b6f0a96a981ab8d0adb33289c093b776823520c8b90dcb71bde",
+  "company": "purecode ai",
+  "sys_role": "ADMIN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T05:31:03.622Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T05:31:03.622Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46c8b26c77db643b7702c"
+  },
+  "name": "srikanth",
+  "email": "srikanth.thanniru@purecodemarketplace.io",
+  "password": "7ba9f68ce4224e359fbb00522724d347abf240366e9f90c1f6e98b9fedbc664de2a208333fe1a191a8f08f3794c558a108409c126b49b3dec961d7ca2baac55a",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T05:54:19.812Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T05:54:19.812Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46cfa26c77db643b77034"
+  },
+  "name": "pranay",
+  "email": "pranay.sivvam@purecodemarketplace.io",
+  "password": "cfe35eb79d6f4e89212c39e940098b148ffc894584ca9eebd37d87e5428bb3864162718c89b2d12415dfcb1ecf43cef4759c96c28837df8c0ef1ba0d57d64c68",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T05:56:10.854Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T05:56:10.854Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46d1426c77db643b77038"
+  },
+  "name": "Dilshad",
+  "email": "dilshad.ansari@purecodemarketplace.io",
+  "password": "f7f853aa14db0bd974287f5af113ef5e877566e75b1219976895f4ce196a9e3e910a4de316a20fef64433d82a0a196f4f227474f944635df55abfae763a37303",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T05:56:36.189Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T05:56:36.189Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46d3626c77db643b7703c"
+  },
+  "name": "teerdha",
+  "email": "teerdha.nadimpalli@purecodemarketplace.io",
+  "password": "cea4816ac37a10c4e0d24c0399bbeba456fdefc7a43dab54049a978444f1102d8a50f681db4b7493423d3a6bde9e520d18775627078865d9d01d2842fa3539eb",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T05:57:10.125Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T05:57:10.125Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46d5826c77db643b77040"
+  },
+  "name": "shireesh",
+  "email": "shireesh.kadam@purecodemarketplace.io",
+  "password": "9ccb3f8a84c2ac2d8eb007e67f4c24e55f92254255c88e2eb77c0685f2f2dbf2486051ecbc929aa6867db890af8b460c4b6b62f39ffc2a8348fb896842142f74",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T05:57:44.146Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T05:57:44.146Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46d7326c77db643b77044"
+  },
+  "name": "vamsi",
+  "email": "vamsi.sanapala@purecodemarketplace.io",
+  "password": "34635ed75180cfae43a7158b7d56f8a45ebbd732ea1b3d5c98953502336c4c01224224f9a568c36856585e4230719e96afa114b325aa8772037cd356784577f7",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T05:58:11.627Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T05:58:11.627Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46d9626c77db643b77048"
+  },
+  "name": "gaurav",
+  "email": "gaurav.sarmalkar@purecodemarketplace.io",
+  "password": "8eb5d84b8bdcdbc2646d1a1242b319250cc3b4c00c387ce6b94a4f96a2c17f9e53b068c0ec5722c8b876c691aeceaea0ac7e4b81a8136c33156dbf40515140c8",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T05:58:46.028Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T05:58:46.028Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46db826c77db643b7704c"
+  },
+  "name": "babji",
+  "email": "babji.balaga@purecodemarketplace.io",
+  "password": "b2254f8d12cb1b7ae536da0bc1efad2701ba4dbfb2ad1273cc44640c08973dd55f6c7b83682c892cc99bffc593874596b959c4cf063a8c8323b6a351d3204843",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T05:59:20.097Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T05:59:20.097Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46de026c77db643b77050"
+  },
+  "name": "saikumar",
+  "email": "saikumar.p@purecodemarketplace.io",
+  "password": "1cf73a835819f905539e2caae8227ce3f63185b89c59ccd3c81c9890397eb4f9c5a472b8426c7260e6d36a2f2b745bbbff34a36df5923d5bda41bebca32455e4",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T06:00:00.919Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T06:00:00.919Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c46dfc26c77db643b77054"
+  },
+  "name": "mahendhar",
+  "email": "mahendhar.kacharala@purecodemarketplace.io",
+  "password": "f8a11494c3b84086c949c46410d8e7a819a74e61c38684a3dc7dd719bb1b409ae29fedd943dca53d2bc183eeb38345099c65aeff46e25c312ec62ee701bdf6c3",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T06:00:28.098Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T06:00:28.098Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4890b0b7116eed47dd266"
+  },
+  "name": "Pavan",
+  "email": "pavan@purecodesoftware.com",
+  "password": "3261d46530a761301e37625532f728548794fe02dbc079d694faa3215ec0588f4f095bf07f7e26e3fd878687b964af27dab83b8d8958affe05e2d3e19523618c",
+  "company": "purecode ai",
+  "sys_role": "ADMIN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T07:55:55.511Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T07:55:55.511Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c489510b7116eed47dd26a"
+  },
+  "name": "Rahul",
+  "email": "r.raj@purecodesoftware.com",
+  "password": "06ecc846dcf8d98a9cd7de09f49bf8f80def9bbfcc0ca40235b2c87c17bdba1484e458fc83062b74f9d40eac8830bb2763792a94e79823450e4a6fe2add48c7c",
+  "company": "purecode ai",
+  "sys_role": "ADMIN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T07:57:05.607Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T07:57:05.607Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4896b0b7116eed47dd26e"
+  },
+  "name": "viveksai",
+  "email": "viveksai@purecodesoftware.com",
+  "password": "9c7027bbcd0f0aaa8e49ff017f971addf1abe60049caf6546a9e4092d8364682019d9006eff3b34d25d4715769bf0dfd68718890e13b52d4623f458af5f9201f",
+  "company": "purecode ai",
+  "sys_role": "ADMIN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T07:57:31.618Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T07:57:31.618Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a63bbbf2b42e8e18cc3c"
+  },
+  "name": "lokesh",
+  "email": "lokeshrewar@purecodemarketplace.io",
+  "password": "ed4b18e9dec82aa34aeec0d1f091ba01e25e2108fdd2c8a8c6d5df6b2b71139e0867317c97fd0c0763b657708ec4167525cc8014a45b66857314056280949ba3",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:00:27.021Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:00:27.021Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a710bbf2b42e8e18cc9c"
+  },
+  "name": "Abhishek Sidnal",
+  "email": "abhishek.sidnal@purecodemarketplace.io",
+  "password": "61c0ef289ce2d4a0aafce337f168296ae0e1e327c64693006ea8c23c502972d0d5fea90f38f3d2ecd3255dcdce609190550cba2bd4823f71b59955e7da26eeb1",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:04:00.747Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:04:00.747Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a790bbf2b42e8e18cdc4"
+  },
+  "name": "Dipali K Vaghoshi",
+  "email": "dipali.vaghoshi@purecodemarketplace.io",
+  "password": "b852c09fde48be0522fe4b7e084e3a35dc9fdb49e37c23c3101756f737ac5da2c3412a0f6e69aa9ee06ef11cb0afa7464cd06957854d3139669d723629c5ffb0",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:06:08.851Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:06:08.851Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a7c2bbf2b42e8e18ce14"
+  },
+  "name": "Adnan Sayyed",
+  "email": "sayyed.adnan@purecodemarketplace.io",
+  "password": "6f0b7fbe3b35af3d982a35def7ce96f70a79f30256f04ee77bd72d5e78d1da9ca968616e9574ef8b54f63240129bdcd77229357a73e712695ed8d66e60c4ed51",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:06:58.418Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:06:58.418Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a7edbbf2b42e8e18ce5c"
+  },
+  "name": "Shubham Sinha",
+  "email": "iamsinghshubhamm@purecodemarketplace.io",
+  "password": "9aabae24b7473a1f61bc0721a47c5b7a17734f2ccc5ce523604a567fa8de45139d05c3d15ebc4c37a6aa1cfbaec909dc02b1a157c542878d08f89acc5c3cfbef",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:07:41.817Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:07:41.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a81bbbf2b42e8e18ce9e"
+  },
+  "name": "Harsh Tiwari",
+  "email": "harsh.tiwari@purecodemarketplace.io",
+  "password": "19c05181cb5256601f4688b49fceeaaaa2d9cd6a55a7c570d3d4a1b4a7c3ec1b84c0da7492602dd5e5f411fcfa3d41915b2acb68ad9cfcda6455fddd8aa8a812",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:08:27.583Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:08:27.583Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a880bbf2b42e8e18cea7"
+  },
+  "name": "Arroju Lahari",
+  "email": "lahari.arroju@purecodemarketplace.io",
+  "password": "691774729d186d9aed2d5e600359177189ab788996870b6040a28d9d22ee48666c8786c1da9721f0daadb49b601efebd86191472c19f4b1607cf5986b8203a16",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:10:08.329Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:10:08.329Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a8b7bbf2b42e8e18cf07"
+  },
+  "name": "P Sai Ganesh",
+  "email": "saiganesh.punnam@purecodemarketplace.io",
+  "password": "7af8d009fd090868347ecfb7ea9757884775681421c2cf44865f21cfba60974395d61d7326bade121769a10a34a9a43e4ed6b3646ae4390335ab18870226a53c",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:11:03.094Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:11:03.094Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a8debbf2b42e8e18cf0c"
+  },
+  "name": "Abhishek kumar vishen",
+  "email": "abhishek.vishen@purecodemarketplace.io",
+  "password": "c92bae4524ae9e13cfc8b52c8963750d4426e6ae2568d6ac5748f5c7d9cc02e178d738677d62022a32c88c88fb8763a397a5360d10c166a35eefa96d5047afde",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:11:42.462Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:11:42.462Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a8fcbbf2b42e8e18cf10"
+  },
+  "name": " Thanniru Srilekha",
+  "email": "srilekha@purecodemarketplace.io",
+  "password": "dfc212abc71f1f57543df01bb674349ceb4f6d13d3f884645bd4f18bcdfdc1fc325435ffdf189152a9c0095ae2048fd4d7d3259f5871670c2f35e7036417fb0c",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:12:12.524Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:12:12.524Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a91fbbf2b42e8e18cf1f"
+  },
+  "name": " Surisetty Susurutha",
+  "email": "susrutha.surisetty@purecodemarketplace.io",
+  "password": "2d6bb638e97cba34a5c6ff6634aa8cdf2e4670bf55cef06350c923a8d59dd00469219cd1ad1a6e172a14bcb5d33f045e90f41dc43e19c5f500f7bab0e7a790b5",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:12:47.598Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:12:47.598Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a96dbbf2b42e8e18cf45"
+  },
+  "name": " Bolisetty Sai Kaushik",
+  "email": "kaushik.b@purecodemarketplace.io",
+  "password": "f222b7e13bd1d274b54d27246455bedb0bb59d53e9dbfb9c5c2da9dc4bb6ae2779451855475fe4ca5fd0aae2bd111f7a5fe2da9b6770facc60087b3633f7ef51",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:14:05.102Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:14:05.102Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a993bbf2b42e8e18cf63"
+  },
+  "name": " Manikanta Ketha",
+  "email": "ketha.manikanta@purecodemarketplace.io",
+  "password": "17ff4f4038fd131dcb76c5436680aa10b9a663a014d829acfceb10e31fe0d08cd9e075e039494a61cda34e11bb8907f5efc3729cd1fd50243e5cb2dab669287e",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:14:43.540Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:14:43.540Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a9b4bbf2b42e8e18cfaf"
+  },
+  "name": " Harshith Reddy Bandam",
+  "email": "harshith.bandam@purecodemarketplace.io",
+  "password": "13ee3ecb72aa4a0889bbd67edce66204f0095de933efe29524e5bb039553eba8211a5fe6d541ad51c41e7a84be34f6527fb9d58468f20ae21cbe009f4e6e2f9e",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:15:16.238Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:15:16.238Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a9d6bbf2b42e8e18cfc4"
+  },
+  "name": " Munigeti Ruchitha",
+  "email": "ruchitha.munigeti@purecodemarketplace.io",
+  "password": "106ab864e5003892c8e81afd66c50a85ba6cb36e4ef265b1fc39f0baa81b7a5670556f66ccb44ffcbcb75793a81937f424b36c54af820ae3aa866b24ba9b80e7",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:15:50.748Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:15:50.748Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4a9f7bbf2b42e8e18cfd9"
+  },
+  "name": " Sachin D R",
+  "email": "sachin.d.r@purecodemarketplace.io",
+  "password": "fb292303028f2834298c492f8d2db6ffd15e8dc0e15ca1ca6f04e3e27ac05438b25ad7ec8545d8f31b482bc5e0b8317b011a542b50989d53ee53f13ce2cefbb2",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:16:23.847Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:16:23.847Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4aa18bbf2b42e8e18cfdd"
+  },
+  "name": " Burra Karunakar",
+  "email": "karunakar.yadav@purecodemarketplace.io",
+  "password": "0f0982a7516faa63adc9ae4aa6727f772555a259a6bc5071ff987cdeca707291a1321d7e512a23724e06edd45c0b2e4a6281cbde8b9f5d81a1fc0ed1b87e0711",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:16:56.270Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:16:56.270Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4aa43bbf2b42e8e18cfe2"
+  },
+  "name": "Praveen Gunja",
+  "email": "g.praveen@purecodemarketplace.io",
+  "password": "b868cc9357f359a4e3342748a6b2e0879d2b1f54c79999308807a10959b6968292263c5c88797d6f671139b7f4271a997e9334129c7771b4a8b7b7cc70e3b500",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:17:39.011Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:17:39.011Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4aa6cbbf2b42e8e18d018"
+  },
+  "name": "Vijaya Ramaraju Nagaraju",
+  "email": "vijayaramaraju@purecodemarketplace.io",
+  "password": "c917a0f3f8b800fea3ecc05c59b3f6b77a6ab9456e196e9454dbc57295830a2b9330052e7c70720090988f142768f5bd6e9b2bc6ce7b6325c552e63112e0c2d2",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:18:20.129Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:18:20.129Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4aa87bbf2b42e8e18d064"
+  },
+  "name": "Rudra prasad Rath",
+  "email": "rudraprasad.rath@purecodemarketplace.io",
+  "password": "59b6f98dd8dd91d45224ee7e230fa22b254b9af58e4c4b71138a911d1a3b92ecb9a89d02b9d1faa74d5d94131d97037e8dc1bb64ddc73e83964d83b9b224dcdf",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:18:47.474Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:18:47.474Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4aaa8bbf2b42e8e18d09f"
+  },
+  "name": "Ashok Kumar Suvvada",
+  "email": "ashokkumar.suvvada@purecodemarketplace.io",
+  "password": "80ffc5da880036e4f619a201874fa1b8adb3658e996bc89c52f63b32e8aad71ddba578ede74ff211e72d5ae76fac240dcde4d4c18146c945f418c0cbb251f090",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:19:20.574Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:19:20.574Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4aadebbf2b42e8e18d0dd"
+  },
+  "name": "Vineetha B",
+  "email": "vineetha.b@purecodemarketplace.io",
+  "password": "9b80e456aa3509854a58af8169894b3eea1dda533a28c19fe26a997653f45329ff0360b5323eb46890c03edbeecb298474512d0d7d61b29a8a2c5809a7885080",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:20:14.604Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:20:14.604Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ab0ebbf2b42e8e18d10f"
+  },
+  "name": "Senapathi Laya",
+  "email": "laya.senapathi@purecodemarketplace.io",
+  "password": "b40801cdb58578175e361c60fcfb8772054758e40e57934b37d65b6dcae346e2ed150a2f80e546163ec088850e5cfe984896af6c1def389dc9ca2c43fe53d54a",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:21:02.114Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:21:02.114Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ab2abbf2b42e8e18d133"
+  },
+  "name": "AMER PASHA",
+  "email": "amer.pasha@purecodemarketplace.io",
+  "password": "33e5e1b6f64cef1d0ed67581644a4d2d8f35622a7a409ddf8980464b9669289358485798b2baf3f27d61e2369a155931d05b78b4bef9543bd21020ef6b3db0ed",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:21:30.155Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:21:30.155Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ab54bbf2b42e8e18d1c9"
+  },
+  "name": "Srikanth Gummadi",
+  "email": "srikanth@purecodemarketplace.io",
+  "password": "435fbe117830142567d9299caf54d6f6fc6bf32ff7ab4b4528c0e91a04eb5756b6e23cae04933c9a3a7b514c23be784ec498f00e30230e116951ded68d794e68",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:22:12.686Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:22:12.686Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ab70bbf2b42e8e18d1cd"
+  },
+  "name": "Naganjaneya Baba Vangalapudi",
+  "email": "naganjaneya.vangalapudi@purecodemarketplace.io",
+  "password": "16dac92377459a7db6dab0ffa50073edccd33c2d5c06194bb90747a9ee12b2fc6f21e1404fa9ac685b75e55702e79240c1ccf8a69c93476302eba03adc391027",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:22:40.063Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:22:40.063Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ab90bbf2b42e8e18d1d2"
+  },
+  "name": "Siddharth",
+  "email": "siddharth.v@purecodemarketplace.io",
+  "password": "f7c8707867105f8078846d548e1ec6a756d808665560a57e3c734121372ae0198f260bce52a2fe46bde5beb287185c20b1a2d8da831858eff4c2d1b9570622b9",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:23:12.908Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:23:12.908Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4abaebbf2b42e8e18d1d7"
+  },
+  "name": "Surya",
+  "email": "suryateja.peddireddy@purecodemarketplace.io",
+  "password": "bd8d0033517a806f2d79f70b05d68f2d9cacac424b922a069f883c1a3f6d0d9adbf9bd1a1749b3465e3cf095303b0b877ff2f21bdae6228874b973e3ed62c997",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:23:42.124Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:23:42.124Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4abccbbf2b42e8e18d1db"
+  },
+  "name": "Shiva Prasad",
+  "email": "c.shivaprasad@purecodemarketplace.io",
+  "password": "1e0beade3a7967f71967eee6836a6da90ed17cdb1c04f194518b6d9e6c6476d222ac7827bebcf0e1529bb358c6f5608a9d477b99c2fa13cf834bcb2b27525e74",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:24:12.584Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:24:12.584Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4abe9bbf2b42e8e18d1df"
+  },
+  "name": "Pratiksha",
+  "email": "pratiksha.jaiswal@purecodemarketplace.io",
+  "password": "f46163ad780a4879a7164d67543e8bbcfbb581fc6add42eca6a6a30d41c84fd9304b149f66dff143a05aa9f55b6397a1fd72939370a6c5dd950bbdc6eaee6270",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:24:41.316Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:24:41.316Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ac05bbf2b42e8e18d207"
+  },
+  "name": "sonia",
+  "email": "soniajaiswal@purecodemarketplace.io",
+  "password": "90bdeba1ccd88f801fa21e11c099b447113e3ba6a909ba5513d943c1878c4d0c990a7e2716602fedf065828dd1832e034645e6b0e663b081952b62fe21127ab3",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:25:09.814Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:25:09.814Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ac3dbbf2b42e8e18d214"
+  },
+  "name": "shaik mohammad",
+  "email": "mohammad.shaik@purecodemarketplace.io",
+  "password": "ad89e261e312574a8d242d8f05c5f51bc3c631a2d3303d15d84fdc0fcaecff53590522e133a42e90bd48e447e1416bb1a265409c8513995602d32ca73a618761",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:26:05.178Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:26:05.178Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ac5fbbf2b42e8e18d221"
+  },
+  "name": "Maturi Naga Venkata Sivasatya Saimanikanta",
+  "email": "saimanikanta.maturi@purecodemarketplace.io",
+  "password": "af67f3f97b031c0edbb75f51a075edf9cc3af33332a56dfd0711cb6516178e8b8769fc2a93db8a4f0673edce217e8d17c6292c7315d3b043616f8db1d96a0060",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:26:39.952Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:26:39.952Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ac83bbf2b42e8e18d228"
+  },
+  "name": "Himanshu Yadav",
+  "email": "himanshu.yadav@purecodemarketplace.io",
+  "password": "297d6b2f93300610b7a4113d2496e8c75b7e8322e5a61e44f6f987b755ac43b32cf8bc5be058372daea3897599970e6b07f9a895b06c1a79afaaef651970e51e",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:27:15.506Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:27:15.506Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4aca4bbf2b42e8e18d240"
+  },
+  "name": "Kapil Choudhary",
+  "email": "kapil.choudhary@purecodemarketplace.io",
+  "password": "6500039194ca416e460f2843bc6182ae7664e35e478770eb42d15b24885b821b558c15d3f2ba841e74f0ef9958737a090f8e09faf960d0185b1b907bf4a8e82d",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:27:48.225Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:27:48.225Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4acc3bbf2b42e8e18d26d"
+  },
+  "name": "Palavi Thakur",
+  "email": "palavi.thakur@purecodemarketplace.io",
+  "password": "4ee4bc2e19f4bef636510da42780eb296b4795fe5451f1fb9efe9f6b2d13a1ef2c05543e12b2974490c133f787d985063d4397c8c2e3b060c751b02e4b8a98a0",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:28:19.097Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:28:19.097Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4acfdbbf2b42e8e18d2c0"
+  },
+  "name": "kore nagaraju",
+  "email": "kore.nagaraju@purecodemarketplace.io",
+  "password": "41be4937607b399e0c94d12b338bf5d10276bcf3ea144d5892781d4df64f83082c7bd38561261b435e7da6fffc505aeeca6bef3666d0c8a4e7975bb35df89b67",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:29:17.677Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:29:17.677Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ad28bbf2b42e8e18d2cd"
+  },
+  "name": "Shivank Sachan ",
+  "email": "shivank@purecodemarketplace.io",
+  "password": "f8952f9a8b7fffbdb467f01e5e7eacc99f349df2d08de62ca3ce501165bc20e391aebd40a0ec58ec19b717622520d3d4157648cd68fa8b6b44a6cfcf78cbe215",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:30:00.581Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:30:00.581Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ad45bbf2b42e8e18d30a"
+  },
+  "name": "Manish Kumar",
+  "email": "manish.kumar@purecodemarketplace.io",
+  "password": "8cc504ca7c4b83efd1074aa9eb7a8f319b74dabe5dcbd0596725fed676e3fa7de66e6178b83b9f960439659f7f5992974679a2e1b7af761aeec512eef47b1702",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:30:29.846Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:30:29.846Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ad6abbf2b42e8e18d37e"
+  },
+  "name": "Diksha Tiwari",
+  "email": "diksha.tiwari@purecodemarketplace.io",
+  "password": "b86ca4c4a12f8f36b38cc89964ee9e5fb5f2e519eb6536d6cf07957a0d741fcff08b55efc8e475c995d42ec4720e8fa5c316fbc86673189c6a3639892166ff34",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:31:06.674Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:31:06.674Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ad85bbf2b42e8e18d3b6"
+  },
+  "name": "Prasanna Lakshmi",
+  "email": "p.lakshmi@purecodemarketplace.io",
+  "password": "bd29b1546519e811924142132a4213422398a19335f82736748299b1fa21b5f81a7f530c83f38fe71c48eb38d8aef7411fe2ecd0cfb60d85497c27cbbc2cfb1d",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:31:33.687Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:31:33.687Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ada1bbf2b42e8e18d3cf"
+  },
+  "name": "Venubabu",
+  "email": "venubabu.velpuri@purecodemarketplace.io",
+  "password": "05c189341528b047e9860b0a47efa55671c1fb4325b07550258600c5fb7cb1ece79b9107e2b0033004e2c0e75e0496300c7c60c45e1b550f708215d4e1aa6c39",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:32:01.248Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:32:01.248Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4adc3bbf2b42e8e18d3ed"
+  },
+  "name": "Kanugula vara prasad",
+  "email": "vara.kangula@purecodemarketplace.io",
+  "password": "d35f217ae23c274e6f60f296da5aa995bc34448e41e53ff764667f44cfb96054beb0bef743a716d9b1d4c4d1241f9e7083f7c3568598961f538c9b64d7df8fb6",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:32:35.892Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:32:35.892Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4adeabbf2b42e8e18d441"
+  },
+  "name": "Akhil Bolla",
+  "email": "akhil.bolla@purecodemarketplace.io",
+  "password": "73b11afa96af9cf1791002dd22de466eef244265e856595d957f3ee932f5c4874578e41392e8d3a3aa17d51bbdfb478afda631c9541542069bca0e7fc6daff3a",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:33:14.052Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:33:14.052Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ae0dbbf2b42e8e18d451"
+  },
+  "name": "Karnati Venkata Siva Gupta",
+  "email": "ksivaguptha@purecodemarketplace.io",
+  "password": "c98aa1a0884d39e1b25cbc6d4ff1bd2b4dd07c999568f23f28a7dfa012ce771df352f1bab4177b68aa462e293441603b1ce2e592680ad70bf4546fb3b313f293",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:33:49.906Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:33:49.906Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4ae37bbf2b42e8e18d470"
+  },
+  "name": "Arvind ",
+  "email": "arvind.gajula@purecodemarketplace.io",
+  "password": "fd4fdc4d6ccb46efa221b5b414f61d087dcfeb6b6809d6bf7ef7931f87ec2a5bef75e56f8dc141a61787aa501c252ad011ccaef08b2b15cffae0865ce9293ea8",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:34:31.067Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:34:31.067Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c4b27a388b8f92eca50081"
+  },
+  "name": "vikas pattar",
+  "email": "vikas.pattar@purecodemarketplace.io",
+  "password": "cd4a425579123a10fee4b8fe71b56e42459db3133b56705a9a57a97789fed1bba7a859b43936cb6ad5eee7072d5764f0b06a52f2090bc4bee557fca985b0b26f",
+  "company": "purecode ai",
+  "sys_role": "INTERN",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-02-08T10:52:42.746Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-08T10:52:42.746Z"
+  },
+  "__v": 0
+}]

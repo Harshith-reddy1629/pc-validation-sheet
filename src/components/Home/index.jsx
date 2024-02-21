@@ -15,13 +15,18 @@ import "react-toastify/dist/ReactToastify.css";
 import { IoClose } from "react-icons/io5";
 
 import { useSearchParams } from "react-router-dom";
-// import  from "../Slice/Slice";
+import { jwtDecode } from "jwt-decode";
+import Cookies from "js-cookie";
 
 function Home() {
   const dataSelected = useSelector((state) => state.data);
   const dispatch = useDispatch();
 
   const [filters, setFilters] = useSearchParams();
+  const token = Cookies.get("jwt_token");
+  const decoded = jwtDecode(token);
+
+  console.log(decoded);
   // const date = filters.get("date");
   // console.log(filters.get("date"));
   const date = filters.get("date") ?? "";

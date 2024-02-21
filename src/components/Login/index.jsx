@@ -36,9 +36,7 @@ const Login = () => {
     }
   };
 
-  const submitForm = async (formValues) => {
-    console.log(formValues);
-
+  const submitForm = async (formValues, { setSubmitting }) => {
     try {
       var options = {
         method: "POST",
@@ -51,44 +49,15 @@ const Login = () => {
       };
 
       const response = await axios.request(options);
-      console.log(response);
 
-      if (response.status === 200) {
-        onSuccess(response.data);
-      } else {
-        console.log("first", response);
-        // setError(response);
-      }
+      onSuccess(response.data);
     } catch (error) {
-      console.log(error.response);
-      console.log("set", response);
-      // setError(error);
+      if (error.response.status === 403) {
+        setVerifiedUser(false);
+      }
+      setError(error.response.data.error);
+      setSubmitting(false);
     }
-
-    // const URL = "https://money-matters-99a1.onrender.com/login";
-
-    // const options = {
-    // method: "POST",
-    // headers: {
-    // Accept: "*/*",
-    // "Content-Type": "application/json",
-    // },
-    // body: JSON.stringify(formValues),
-    // };
-
-    // try {
-    //   const response = await fetch(URL, options);
-
-    //   const result = await response.json();
-
-    //   if (response.ok) {
-    //     onSuccess(result);
-    //   } else {
-    //     onFailed(result, response);
-    //   }
-    // } catch (error) {
-    //   setError("Something went wrong");
-    // }
   };
 
   return (
@@ -101,7 +70,9 @@ const Login = () => {
 
         return errors;
       }}
-      onSubmit={(values) => submitForm(values)}
+      onSubmit={(values, { setSubmitting }) => {
+        submitForm(values, { setSubmitting });
+      }}
     >
       {({
         values,
@@ -112,65 +83,79 @@ const Login = () => {
         handleSubmit,
         isSubmitting,
       }) => (
-        <form
-          onChange={handleChange}
-          onBlur={handleBlur}
-          onSubmit={handleSubmit}
-          onFocus={() => setError("")}
-          className="flex flex-col items-center py-3 px-4 gap-4"
-        >
-          <h1 className="text-2xl text-[#323268] font-bold">Login</h1>
-          <div className="flex flex-col w-full ">
-            <label htmlFor="username" className="text-[12px] font-[500]">
-              USERNAME
-            </label>
-            <input
-              className="bg-gray-200 p-1.5 text-[16px] rounded px-2 placeholder:text-gray-500"
-              type="text"
-              placeholder="Enter username"
-              id="username"
-            />
-            <p className="text-[11px] text-red-600">
-              {errors.username && touched.username && errors.username}
-            </p>
-          </div>
-          <div className="flex flex-col w-full">
-            <label htmlFor="password" className="text-[12px] font-[500]">
-              PASSWORD{" "}
-            </label>
-            <div className="w-full flex items-center bg-gray-200 rounded">
+        <>
+          <form
+            onChange={handleChange}
+            onBlur={handleBlur}
+            onSubmit={handleSubmit}
+            onFocus={() => {
+              setError("");
+            }}
+            className="flex flex-col items-center py-3 px-4 gap-4"
+          >
+            <h1 className="text-2xl text-[#323268] font-bold">Login</h1>
+            <div className="flex flex-col w-full ">
+              <label htmlFor="username" className="text-[12px] font-[500]">
+                USERNAME
+              </label>
               <input
-                className="bg-gray-200 p-1.5 text-[16px] grow px-2   placeholder:text-gray-500 "
-                type={passwordHidden ? "password" : "text"}
-                placeholder="Password"
-                id="password"
+                className="bg-gray-200 p-1.5 text-[16px] rounded px-2 placeholder:text-gray-500"
+                type="text"
+                placeholder="Enter username"
+                id="username"
               />
-              <button
-                className="px-1.5"
-                type="button"
-                id="setP"
-                onClick={() => setPasswordHidden(!passwordHidden)}
-              >
-                {passwordHidden ? <IoMdEye /> : <IoMdEyeOff />}
-              </button>
+              <p className="text-[11px] text-red-600">
+                {errors.username && touched.username && errors.username}
+              </p>
             </div>
-            <p className="text-[11px] text-red-600">
-              {errors.password && touched.password && errors.password}
-            </p>
-          </div>
-          <div className="w-full py-5">
-            <button
-              type="submit"
-              id="login"
-              disabled={isSubmitting}
-              className="bg-[#227a55] w-full py-1.5 rounded text-white "
-            >
-              {isSubmitting ? "Logging" : "Log in"}
-            </button>
+            <div className="flex flex-col w-full">
+              <label htmlFor="password" className="text-[12px] font-[500]">
+                PASSWORD{" "}
+              </label>
+              <div className="w-full flex items-center bg-gray-200 rounded">
+                <input
+                  className="bg-gray-200 p-1.5 text-[16px] grow px-2   placeholder:text-gray-500 "
+                  type={passwordHidden ? "password" : "text"}
+                  placeholder="Password"
+                  id="password"
+                />
+                <button
+                  className="px-1.5"
+                  type="button"
+                  id="setP"
+                  onClick={() => setPasswordHidden(!passwordHidden)}
+                >
+                  {passwordHidden ? <IoMdEye /> : <IoMdEyeOff />}
+                </button>
+              </div>
+              <p className="text-[11px] text-red-600">
+                {errors.password && touched.password && errors.password}
+              </p>
+            </div>
+            <div className="w-full py-5 pb-2">
+              <button
+                type="submit"
+                id="login"
+                disabled={isSubmitting}
+                className="bg-[#227a55] w-full py-1.5 rounded text-white disabled:bg-[#62c69c]"
+              >
+                {isSubmitting ? "Logging" : "Log in"}
+              </button>
 
-            <p className="text-[11px] text-red-600">{errorMessage}</p>
-          </div>
-        </form>
+              <p className="text-[13px] text-red-600">{errorMessage}</p>
+            </div>
+          </form>
+          {!isVerifiedUser && (
+            <div className="w-full flex justify-center items-center py-3">
+              <Link
+                to="/resend"
+                className="bg-slate-700 text-white p-1 px-3 text-[12px] rounded hover:shadow-[3px_3px_8px_#00000030]"
+              >
+                Resend Mail
+              </Link>
+            </div>
+          )}
+        </>
       )}
     </Formik>
   );

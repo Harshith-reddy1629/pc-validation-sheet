@@ -26,7 +26,6 @@ function Home() {
   // console.log(filters.get("date"));
   const date = filters.get("date") ?? "";
   const nameF = filters.get("nameF") ?? "";
-  console.log(nameF);
   const onSearch = () => {
     clearTimeout(searchInt);
 

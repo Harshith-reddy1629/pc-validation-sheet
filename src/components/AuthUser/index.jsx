@@ -5,7 +5,7 @@ import { Navigate, Outlet, useNavigate } from "react-router-dom";
 import pc from "../../assets/pc.png";
 
 function AuthUser() {
-  const isAuth = !Cookies.get("jwt_Token");
+  const isAuth = Cookies.get("jwt_token");
 
   const navigate = useNavigate();
 

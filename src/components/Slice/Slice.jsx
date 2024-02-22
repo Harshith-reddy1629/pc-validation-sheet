@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 const initialState = {
   data: [],
@@ -7,6 +8,8 @@ const initialState = {
   modifyStatus: "initial",
   errorMessage: "",
 };
+
+const jwt = Cookies.get("jwt_token");
 
 export const fetchData = createAsyncThunk(
   "packsData/fetchData",
@@ -18,8 +21,7 @@ export const fetchData = createAsyncThunk(
         headers: {
           Accept: "*/*",
 
-          Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhhcnNoaXRoMSIsImlzQWRtaW4iOnRydWUsImVtYWlsIjoiYWJjQDEyMyIsIl9pZCI6IjY1Y2IwZjQxNDRkMjg3NjgzZjE4YjU1NyIsImlhdCI6MTcwODM1ODU2MH0.xeUmUM4yN8Kjqi2IF9dUlLfKk9WXQFMqDn2vGI93Jjw",
+          Authorization: `Bearer ${jwt}`,
           "Content-Type": "application/json",
         },
       };
@@ -44,8 +46,7 @@ export const updateData = createAsyncThunk(
         headers: {
           Accept: "*/*",
 
-          Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhhcnNoaXRoMSIsImlzQWRtaW4iOnRydWUsImVtYWlsIjoiYWJjQDEyMyIsIl9pZCI6IjY1Y2IwZjQxNDRkMjg3NjgzZjE4YjU1NyIsImlhdCI6MTcwODM1ODU2MH0.xeUmUM4yN8Kjqi2IF9dUlLfKk9WXQFMqDn2vGI93Jjw",
+          Authorization: `Bearer ${jwt}`,
           "Content-Type": "application/json",
         },
         data: newStat,
@@ -70,8 +71,7 @@ export const addData = createAsyncThunk(
         headers: {
           Accept: "*/*",
 
-          Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhhcnNoaXRoMSIsImlzQWRtaW4iOnRydWUsImVtYWlsIjoiYWJjQDEyMyIsIl9pZCI6IjY1Y2IwZjQxNDRkMjg3NjgzZjE4YjU1NyIsImlhdCI6MTcwODM1ODU2MH0.xeUmUM4yN8Kjqi2IF9dUlLfKk9WXQFMqDn2vGI93Jjw",
+          Authorization: `Bearer ${jwt}`,
           "Content-Type": "application/json",
         },
         data,

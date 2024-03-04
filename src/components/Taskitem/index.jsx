@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useDispatch } from "react-redux";
 import { updateData } from "../Slice/Slice";
 import Cookies from "js-cookie";
@@ -55,4 +55,4 @@ function Taskitem({ e, ind }) {
   );
 }
 
-export default Taskitem;
+export default memo(Taskitem);

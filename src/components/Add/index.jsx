@@ -18,6 +18,7 @@ function Add() {
   const token = Cookies.get("jwt_token");
 
   const decoded = jwtDecode(token);
+  const initialname = decoded.is_admin ? "" : decoded.username;
   console.log(decoded);
   const dispatch = useDispatch();
 
@@ -37,7 +38,7 @@ function Add() {
         <div>
           <Formik
             initialValues={{
-              name: decoded.username,
+              name: initialname,
               template_name: "",
               completed_today: "",
               // totalComponents: "",
@@ -74,7 +75,7 @@ function Add() {
               >
                 <h1 className="text-[18px] font-[500]">Add Pack Details</h1>
                 <div className=" grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-2 gap-y-3">
-                  {decoded.isAdmin && (
+                  {decoded.is_admin && (
                     <div className="flex flex-col gap-1">
                       <label className="text-[13px] font-[500]">
                         Name of Editor

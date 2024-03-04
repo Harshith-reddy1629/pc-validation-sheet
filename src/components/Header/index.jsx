@@ -13,7 +13,7 @@ function Header() {
   return (
     <nav className="nav_bar">
       <img src={pc} className="h-[28px] " alt="..." />
-      <h1 className="text-[20px] font-[600]">Validation Sheets</h1>
+      {/* <h1 className="text-[20px] font-[600]">Validation Sheets</h1> */}
       <button onClick={onLogout} className="log_out">
         Logout
       </button>

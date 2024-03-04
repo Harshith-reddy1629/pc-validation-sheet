@@ -47,7 +47,8 @@ function Home() {
 
   const date = filters.get("date") ?? "";
 
-  const nameF = filters.get("nameF") ?? "";
+  const name_q = filters.get("name_q") ?? "";
+  const pack_q = filters.get("pack_q") ?? "";
 
   useEffect(() => {
     dispatch(fetchData());
@@ -74,19 +75,26 @@ function Home() {
 
   const filteredData = useMemo(() => {
     if (!date || date === "all") {
-      if (!nameF) {
+      if (!name_q && !pack_q) {
         return dataSelected.data;
       } else {
-        return dataSelected.data.filter((item) =>
-          item.user_name.toLowerCase().includes(nameF.toLowerCase())
-        );
+        return dataSelected.data
+          .filter((item) =>
+            item.user_name.toLowerCase().includes(name_q.toLowerCase())
+          )
+          .filter((e) =>
+            e.template_name.toLowerCase().includes(pack_q.toLowerCase())
+          );
       }
     }
 
     return dataSelected.data
       .filter((item) => item.date === date)
       .filter((each) =>
-        each.user_name.toLowerCase().includes(nameF.toLowerCase())
+        each.user_name.toLowerCase().includes(name_q.toLowerCase())
+      )
+      .filter((e) =>
+        e.template_name.toLowerCase().includes(pack_q.toLowerCase())
       );
   }, [dataSelected, filters]);
 
@@ -106,7 +114,7 @@ function Home() {
         {tos()}
         <ToastContainer />
         <div>
-          <p className="p-1 border-2 rounded min-w-40 border-gray-500">
+          <p className="p-1 border-2 text-center shadow-md rounded min-w-40 border-gray-500">
             Done Packs : {countOfDoneScreens}{" "}
           </p>
         </div>
@@ -114,15 +122,17 @@ function Home() {
       <div className="flex  gap-10 w-full items-end">
         {decoded.is_admin && (
           <div className="flex flex-col gap-x-2 ">
-            <label className="text-[12px] font-bold">Filter User</label>
+            <label className="text-[12px] font-bold ml-1">Filter User</label>
             <input
               list="users"
               name="user"
               id="user"
-              defaultValue={nameF}
-              onChange={(e) => setFilters({ date, nameF: e.target.value })}
+              defaultValue={name_q}
+              onChange={(e) =>
+                setFilters({ date, pack_q, name_q: e.target.value })
+              }
               placeholder="Enter user"
-              className="outline-none bg-stone-200 p-1 px-2 rounded placeholder:text-gray-500 text-[15px] shadow-[4px_4px_2px_#00000020_,_-3px_-3px_3px_#fff_,_inset_3px_3px_5px_#00000010] "
+              className="outline-none bg-stone-200 p-1 px-4 rounded-full placeholder:text-gray-500 text-[15px] shadow-[1px_4px_0px_#00000090_,_-3px_-3px_3px_#fff_,_inset_3px_3px_5px_#00000010] "
             />
 
             <datalist id="users">
@@ -133,22 +143,40 @@ function Home() {
           </div>
         )}
         <div>
-          <label className="text-[12px] font-bold">Filter by date</label>
-          <div className="date_container shadow">
+          <label className="text-[12px] font-bold ml-1">Filter by date</label>
+          <div className="date_container shadow rounded-full overflow-hidden shadow-[1px_4px_0px__#00000090_,_0px_0_2px_#00000030]">
             <input
               type="date"
               value={date}
-              className="p-1 text-[13px] "
-              onChange={(e) => setFilters({ nameF, date: e.target.value })}
+              className="p-1 px-2 text-[13px] "
+              onChange={(e) =>
+                setFilters({ name_q, pack_q, date: e.target.value })
+              }
             />
             <button
               onClick={() => {
-                setFilters({ nameF, date: "" });
+                setFilters({ name_q, date: "", pack_q });
               }}
+              className="px-1"
             >
               <IoClose />
             </button>
           </div>
+        </div>
+        <div className="flex flex-col gap-x-2 ">
+          <label htmlFor="pack" className="text-[12px] font-bold ml-1">
+            Filter Pack
+          </label>
+          <input
+            name="pack"
+            id="pack"
+            defaultValue={pack_q}
+            onChange={(e) =>
+              setFilters({ date, name_q, pack_q: e.target.value })
+            }
+            placeholder="Enter packname"
+            className="outline-none bg-stone-200 p-1 px-4 rounded-full placeholder:text-gray-500 text-[15px] shadow-[1px_4px_0px_#00000090_,_-3px_-3px_3px_#fff_,_inset_3px_3px_5px_#00000010] "
+          />
         </div>
       </div>
       <div className="w-full py-3">

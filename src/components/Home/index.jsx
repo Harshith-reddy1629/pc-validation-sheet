@@ -43,7 +43,9 @@ function Home() {
 
   const token = Cookies.get("jwt_token");
 
-  const decoded = jwtDecode(token);
+  const decoded = useMemo(() => {
+    return jwtDecode(token);
+  }, []);
 
   const date = filters.get("date") ?? "";
 
@@ -104,7 +106,7 @@ function Home() {
     <div className=" main-container ">
       <div className="">
         <h1 className="text-center text-[24px] font-mono">
-          Hi {decoded.username}
+          Hi {decoded.username}&#128075;
         </h1>
       </div>
       <div className="flex justify-between mb-2">

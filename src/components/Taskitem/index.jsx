@@ -29,16 +29,16 @@ function Taskitem({ e, ind }) {
   // const { status, No_of_screens_completed } = template_data;
 
   return (
-    <tr className="table-row  ">
+    <tr className="table-row shadow">
       <td className="table-cell p-2 rounded-l-md">{ind + 1}</td>
       <td className="table-cell">{e.date}</td>
       {decoded.is_admin && <td className="table-cell">{e.user_name} </td>}
       <td className="table-cell">{e.template_name}</td>
       <td className="table-cell">{e.template_data.No_of_screens_completed}</td>
       <td className="table-cell">{e.completed_today}</td>
-      <td className="table-cell">
+      <td className="table-cell py-2">
         <select
-          className="bg-gray-300 p-1 shadow-[0px_0px_2px_#00000030] rounded"
+          className="bg-gray-200 p-1 text-[14px] rounded"
           value={e.template_data.status}
           onChange={updateStatus}
         >

@@ -78,13 +78,14 @@ function EmailVerify() {
               height={65}
               style={{ objectFit: "contain" }}
               src={verifiedImg}
+              className="h-[65px]"
               alt=".."
             />
             <h4>Your email is verified</h4>
             <Link
               to="/login"
               style={{ paddingInline: "30px" }}
-              className="no-underline p-[6px_20px] w-full bg-slate-800"
+              className="no-underline p-[6px_20px] rounded text-white w-full bg-slate-800"
             >
               Login
             </Link>

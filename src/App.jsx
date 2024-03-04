@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/verify" element={<EmailVerify />} />
+        <Route path="/verify/:id" element={<EmailVerify />} />
         <Route element={<CheckAuth />}>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />

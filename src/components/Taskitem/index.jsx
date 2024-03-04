@@ -32,7 +32,7 @@ function Taskitem({ e, ind }) {
     <tr className="table-row  ">
       <td className="table-cell p-2 rounded-l-md">{ind + 1}</td>
       <td className="table-cell">{e.date}</td>
-      {decoded.isAdmin && <td className="table-cell">{e.user_name} </td>}
+      {decoded.is_admin && <td className="table-cell">{e.user_name} </td>}
       <td className="table-cell">{e.template_name}</td>
       <td className="table-cell">{e.template_data.No_of_screens_completed}</td>
       <td className="table-cell">{e.completed_today}</td>

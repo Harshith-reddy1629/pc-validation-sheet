@@ -194,23 +194,32 @@ const Register = () => {
         </Formik>
       )}
       {registered && (
-        <div className="success-container">
+        <div className="flex flex-col items-center justify-center gap-3 p-5 py-8">
           <img
             src="https://cdn-icons-png.flaticon.com/512/7518/7518748.png"
             alt="success"
             height="90"
+            className="h-[85px] w-auto"
           />
           <p>SUCCESSFULLY REGISTERED</p>
 
-          <p>verification link sent to your mail</p>
-
-          <button
-            onClick={() => navigate("/login")}
-            className="successful-reg-btn"
-            type="button"
-          >
-            LOGIN
-          </button>
+          <p>
+            verification link sent to your mail
+            <span className="block text-[11px] text-center text-gray-400">
+              {" "}
+              Didn't receive? Check spam{" "}
+            </span>
+          </p>
+          <div className="flex flex-col">
+            <span className="text-[11px] text-gray-500">If verified</span>
+            <button
+              onClick={() => navigate("/login")}
+              className="bg-gray-400 p-5 py-1 rounded-md text-[14px] font-[600] shadow"
+              type="button"
+            >
+              LOGIN
+            </button>
+          </div>
         </div>
       )}
     </>

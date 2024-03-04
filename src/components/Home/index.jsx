@@ -94,6 +94,11 @@ function Home() {
 
   return (
     <div className=" main-container ">
+      <div className="">
+        <h1 className="text-center text-[24px] font-mono">
+          Hi {decoded.username}
+        </h1>
+      </div>
       <div className="flex justify-between mb-2">
         <Add />
         {/* {toasst()} */}
@@ -107,7 +112,7 @@ function Home() {
         </div>
       </div>
       <div className="flex  gap-10 w-full items-end">
-        {decoded.isAdmin && (
+        {decoded.is_admin && (
           <div className="flex flex-col gap-x-2 ">
             <label className="text-[12px] font-bold">Filter User</label>
             <input
@@ -152,7 +157,7 @@ function Home() {
             <tr className="table-row  ">
               <th className="table-cell p-2 rounded-l-md">S no</th>
               <th className="table-cell">Date</th>
-              {decoded.isAdmin && <th className="table-cell">Editor Name </th>}
+              {decoded.is_admin && <th className="table-cell">Editor Name </th>}
               <th className="table-cell">component Name</th>
               <th className="table-cell">Screens</th>
               <th className="table-cell">Completed</th>

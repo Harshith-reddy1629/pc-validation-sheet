@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.log_out {
+  @apply bg-teal-950  px-6 p-1 text-white rounded;
+}
+
+.nav_bar {
+  @apply bg-[#a1a7a5] p-2 px-10 flex justify-between /*m-1.5 mt-2 rounded-md*/  sticky top-0;
+}
+
 .popup-content {
   border-radius: 5px;
   padding: 0.5rem;

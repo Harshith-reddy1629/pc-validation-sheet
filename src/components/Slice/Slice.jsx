@@ -1,11 +1,20 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+
 import axios from "axios";
+
 import Cookies from "js-cookie";
+
+import { useSelector } from "react-redux";
 
 const initialState = {
   data: [],
+
+  doneScreens: 0,
+
   status: "initial",
+
   modifyStatus: "initial",
+
   errorMessage: "",
 };
 
@@ -13,24 +22,27 @@ const jwt = Cookies.get("jwt_token");
 
 export const fetchData = createAsyncThunk(
   "packsData/fetchData",
+
   async (_, thunkApi) => {
     try {
       var options = {
         method: "GET",
-        url: "https://sheets-njt7.onrender.com/validation",
+
+        url: "https://sheets-njt7.onrender.com/validation/day-wise",
+
         headers: {
           Accept: "*/*",
 
           Authorization: `Bearer ${jwt}`,
+
           "Content-Type": "application/json",
         },
       };
 
       const response = await axios.request(options);
+
       return response.data;
     } catch (error) {
-      console.log(error);
-      console.log(error.response);
       return thunkApi.rejectWithValue(error.response.data.error);
     }
   }
@@ -38,25 +50,24 @@ export const fetchData = createAsyncThunk(
 
 export const updateData = createAsyncThunk(
   "packsData/updateData",
-  async ({ itemId, newStat }, thunkApi) => {
+  async ({ Ids, stat }, thunkApi) => {
     try {
       var options = {
         method: "PUT",
-        url: `https://sheets-njt7.onrender.com/validation/${itemId}`,
+        url: `https://sheets-njt7.onrender.com/validation/day-wise/${Ids.itemID}/${Ids.userId}/${Ids.templateId}`,
+        // "/day-wise/:dayId/:userId/:templateId",
         headers: {
           Accept: "*/*",
 
           Authorization: `Bearer ${jwt}`,
           "Content-Type": "application/json",
         },
-        data: newStat,
+        data: stat,
       };
 
       const response = await axios.request(options);
       return response.data;
     } catch (error) {
-      console.log(error);
-      console.log(error.message);
       return thunkApi.rejectWithValue(error.response.data.error);
     }
   }
@@ -67,7 +78,7 @@ export const addData = createAsyncThunk(
     try {
       var options = {
         method: "POST",
-        url: `https://sheets-njt7.onrender.com/validation/`,
+        url: `https://sheets-njt7.onrender.com/validation/day-wise`,
         headers: {
           Accept: "*/*",
 
@@ -80,8 +91,6 @@ export const addData = createAsyncThunk(
       const response = await axios.request(options);
       return response.data;
     } catch (error) {
-      console.log(error);
-      console.log(error.response.data);
       return thunkApi.rejectWithValue(error.response.data.error);
     }
   }
@@ -89,54 +98,74 @@ export const addData = createAsyncThunk(
 
 const dataSlice = createSlice({
   name: "tasks",
+
   initialState,
+
   extraReducers: (builder) => {
     builder
       .addCase(fetchData.pending, (state) => {
-        console.log("load");
         state.status = "Loading";
       })
+      .addCase(fetchData.rejected, (state, action) => {
+        console.log(action);
+        state.status = "Error";
+        state.errorMessage = "err";
+      })
       .addCase(fetchData.fulfilled, (state, action) => {
-        state.data = action.payload;
+        console.log(action.payload);
+        state.data = action.payload.data;
+        state.doneScreens = action.payload.DoneScreens;
         state.status = "Success";
       })
-      .addCase(fetchData.rejected, (state) => {
-        state.status = "Error";
-      })
+
       .addCase(updateData.fulfilled, (state, action) => {
-        console.log(state);
+        const updatedItem = action.payload.data;
 
         state.data = state.data.map((item) => {
-          if (item._id === action.meta.arg.itemId) {
-            return { ...item, ...action.meta.arg.newStat };
+          if (item._id === updatedItem._id) {
+            return updatedItem;
+          }
+          if (item.template_id === updatedItem.template_id) {
+            return {
+              ...item,
+              template_data: {
+                ...item.template_data,
+                status: updatedItem.template_data.status,
+              },
+            };
           }
           return item;
         });
 
         state.modifyStatus = "Success";
-        console.log(state);
+
+        state.doneScreens = action.payload.DoneScreens;
       })
       .addCase(updateData.pending, (state) => {
         state.modifyStatus = "Updating";
       })
-      .addCase(updateData.rejected, (state) => {
+      .addCase(updateData.rejected, (state, action) => {
         state.modifyStatus = "Error";
       })
       .addCase(addData.fulfilled, (state, action) => {
-        state.data = [...state.data, action.payload];
+        console.log(action);
+        const { created_data, user_data, template_data } = action.payload.data;
+        state.data = [
+          ...state.data,
+          { ...created_data, user_data, template_data },
+        ];
         state.modifyStatus = "Success";
       })
       .addCase(addData.pending, (state) => {
         state.modifyStatus = "Adding";
       })
       .addCase(addData.rejected, (state, action) => {
-        console.log("aaa", action.payload);
+        console.log(action);
+        // state.status = "Error";
+        state.errorMessage = action.payload;
         state.modifyStatus = "Error";
       });
   },
 });
-
-export const getAllData = (state) => state.data;
-export const status = (state) => state.status;
 
 export default dataSlice.reducer;

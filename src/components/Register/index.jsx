@@ -34,15 +34,12 @@ const Register = () => {
       const response = await fetch(URL, options);
 
       const result = await response.json();
-      console.log(result);
       if (response.ok) {
         onSuccess(result);
       } else {
-        console.log("11111");
         onFailed(result);
       }
     } catch (error) {
-      console.log("first");
       setError("Something went wrong");
     }
   };

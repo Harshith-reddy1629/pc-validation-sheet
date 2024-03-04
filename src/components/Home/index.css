@@ -1,0 +1,7 @@
+.main-container {
+  @apply p-5 px-12;
+}
+
+.date_container {
+  @apply flex items-center w-fit  bg-slate-300 gap-1 pr-1;
+}
